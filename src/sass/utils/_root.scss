@@ -1,0 +1,35 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --black-2: #030405;
+
+    --grey-1: #c2c2c2;
+    --grey-2: #999999;
+    --grey-3: #a4a4a4;
+    --grey-4: #8d8d8d;
+    --grey-5: #808080;
+    --grey-6: #b3b3b3;
+    --grey-7: #b9b9b9;
+    --grey-8: #cccbcc;
+    --grey-9: #b5b5b5;
+    --grey-10: #5f6164;
+    --grey-11: #68696b;
+    --grey-12: #747476;
+    --grey-13: #e8e8eb;
+
+    --alarm: #fd4948;
+    --online: #70cc16;
+    --offline: #666666;
+    --link: #3577ef;
+}
+
+@mixin MnullPnull {
+    margin: 0;
+    padding: 0;
+}
+
+body.light {
+}
+
+body.dark {
+}

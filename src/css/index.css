@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --black-2: #030405;
+  --grey-1: #c2c2c2;
+  --grey-2: #999999;
+  --grey-3: #a4a4a4;
+  --grey-4: #8d8d8d;
+  --grey-5: #808080;
+  --grey-6: #b3b3b3;
+  --grey-7: #b9b9b9;
+  --grey-8: #cccbcc;
+  --grey-9: #b5b5b5;
+  --grey-10: #5f6164;
+  --grey-11: #68696b;
+  --grey-12: #747476;
+  --grey-13: #e8e8eb;
+  --alarm: #fd4948;
+  --online: #70cc16;
+  --offline: #666666;
+  --link: #3577ef;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", sans-serif !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+}

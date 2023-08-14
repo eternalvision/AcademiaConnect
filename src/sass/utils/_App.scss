@@ -1,0 +1,29 @@
+* {
+    @include MnullPnull;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include MnullPnull;
+}
+
+input,
+textarea,
+button {
+    border: none;
+    outline: none;
+}
