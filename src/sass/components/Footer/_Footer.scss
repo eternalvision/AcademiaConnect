@@ -1,0 +1,7 @@
+.Footer {
+    flex: 0 1 auto;
+    background-color: var(--footer-bg);
+    border-radius: var(--border-r-b);
+    margin: var(--block-spacing) var(--distance-boundaries)
+        var(--distance-boundaries) var(--block-spacing);
+}

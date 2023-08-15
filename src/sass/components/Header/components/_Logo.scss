@@ -1,0 +1,15 @@
+.HeaderLogo {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    background-color: var(--logo-bg);
+    color: var(--logo-color);
+    border-radius: var(--border-r-b) var(--border-r-s);
+    a {
+        color: inherit;
+        padding: 15px;
+    }
+}

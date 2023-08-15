@@ -1,0 +1,24 @@
+.HeaderMenu-list {
+    li {
+        user-select: none !important;
+        font-size: var(--font-size-b);
+        margin-bottom: 5px;
+        a {
+            align-items: center;
+            display: flex;
+            padding: 10px;
+            color: var(--menu-items-color);
+            border-radius: var(--border-r-s);
+            span {
+                margin-left: 10px;
+            }
+            &:hover {
+                background-color: var(--menu-items-hover-bg);
+                color: var(--menu-items-hover-color);
+            }
+        }
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.Main {
+    @include Scroll;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    background-color: var(--main-bg);
+    border-radius: var(--border-r-b);
+    margin: var(--distance-boundaries);
+}

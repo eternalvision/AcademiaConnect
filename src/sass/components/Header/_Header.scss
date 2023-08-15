@@ -1,0 +1,15 @@
+@import "./components/Logo";
+@import "./components/Menu";
+
+.Header {
+    @include Scroll;
+    min-width: 220px;
+    overflow-y: auto;
+    background-color: var(--header-bg);
+    border-radius: var(--border-r-b);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: var(--distance-boundaries) var(--block-spacing)
+        var(--distance-boundaries) var(--distance-boundaries);
+}

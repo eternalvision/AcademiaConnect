@@ -12,6 +12,14 @@ import {
     RiUserAddLine,
     RiUserAddFill,
     //
+    //! friends
+    RiTeamLine,
+    RiTeamFill,
+    //
+    //! groups
+    RiCupLine,
+    RiCupFill,
+    //
     //! users
     RiGroupLine,
     RiGroupFill,
@@ -48,9 +56,13 @@ import {
     RiLogoutBoxLine,
     RiLogoutBoxFill,
     //
-    //! menu
+    //! mobile menu
     RiMenuLine,
     RiMenuFill,
+    //
+    //! newspaper
+    RiNewspaperLine,
+    RiNewspaperFill,
     //
     //! pereferences
     RiMore2Line,
@@ -143,6 +155,12 @@ export const Logo = {
     RiUserAddLine,
     RiUserAddFill,
 
+    RiTeamLine,
+    RiTeamFill,
+
+    RiCupLine,
+    RiCupFill,
+
     RiGroupLine,
     RiGroupFill,
 
@@ -173,6 +191,9 @@ export const Logo = {
 
     RiMenuLine,
     RiMenuFill,
+
+    RiNewspaperLine,
+    RiNewspaperFill,
 
     RiMore2Line,
     RiMore2Fill,

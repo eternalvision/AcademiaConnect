@@ -27,3 +27,55 @@ button {
     border: none;
     outline: none;
 }
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--body-bg);
+    overflow: hidden;
+}
+
+#root {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.RootContainers {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.Header,
+.Main,
+.Footer {
+    padding: 15px;
+}
+
+.activeMenu,
+.activeLanguage {
+    pointer-events: none !important;
+    cursor: default !important;
+}
+
+.activeMenu {
+    color: var(--menu-items-active-color) !important;
+    background-color: var(--menu-items-active-bg) !important;
+}
+
+.activeLanguage {
+    background-color: var(--lang-active-bg);
+    color: var(--lang-active-color);
+}
+
+.inactiveLanguage {
+    cursor: pointer;
+    background-color: var(--lang-inactive-bg);
+}

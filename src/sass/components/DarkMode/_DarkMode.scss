@@ -1,0 +1,20 @@
+.DarkMode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        border-radius: var(--border-r-circle);
+        cursor: pointer;
+        padding: 10px;
+        background-color: var(--darkmode-bg);
+        color: var(--darkmode-color);
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

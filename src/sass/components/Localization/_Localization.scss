@@ -1,0 +1,17 @@
+.Localization {
+    display: flex;
+    justify-content: space-around;
+    font-size: var(--font-size-b);
+    user-select: none !important;
+
+    button {
+        padding: 10px;
+        width: 100%;
+        &:first-child {
+            border-radius: var(--border-r-s) 0px 0px var(--border-r-s);
+        }
+        &:last-child {
+            border-radius: 0px var(--border-r-s) var(--border-r-s) 0px;
+        }
+    }
+}
