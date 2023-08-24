@@ -43,7 +43,6 @@ body {
     display: flex;
     height: 100vh;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -51,6 +50,8 @@ body {
     display: flex;
     flex-direction: column;
     flex: 2;
+    margin: var(--distance-boundaries) var(--distance-boundaries)
+        var(--distance-boundaries) var(--block-spacing);
 }
 
 .Header,

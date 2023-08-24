@@ -1,0 +1,57 @@
+.MainUserInfo {
+    margin-top: -100px;
+    margin-left: 25px;
+}
+
+.MainUserInfo-list {
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    li {
+        &:first-child {
+            img {
+                border-radius: var(--border-r-b);
+            }
+        }
+    }
+}
+
+.MainUserInfo-item__Photo {
+    border-radius: var(--border-r-bigger) 0px 0px var(--border-r-bigger);
+    padding: 20px 0px 20px 20px;
+}
+
+.MainUserInfo-item__UserInfo {
+    border-radius: 0px var(--border-r-bigger) var(--border-r-bigger) 0px;
+}
+
+.MainUserInfo-item__Photo,
+.MainUserInfo-item__UserInfo {
+    background-color: #a4a4a4d5;
+    backdrop-filter: blur(20px);
+}
+
+.UserInfo {
+    padding: 20px;
+    color: var(--menu-items-color);
+}
+
+.UserInfo-Name {
+    font-size: 40px;
+    display: flex;
+}
+
+.UserInfo-UserName {
+    margin-bottom: 10px;
+}
+
+.UserInfo-UserName,
+.UserInfo-Age,
+.UserInfo-Academy {
+    font-size: 20px;
+}
+
+.UserInfo-Status {
+    font-size: 15px;
+    margin-left: 0px;
+}

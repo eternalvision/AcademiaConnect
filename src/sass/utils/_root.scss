@@ -6,6 +6,7 @@
 
     --transparent: transparent;
 
+    --border-r-bigger: 30px;
     --border-r-b: 20px;
     --border-r-s: 12px;
     --border-r-circle: 50%;
@@ -42,6 +43,8 @@ body.light {
 
     --darkmode-bg: var(--black);
     --darkmode-color: var(--white);
+
+    --cover-bg: var(--gray-hover);
 }
 
 body.dark {
@@ -65,6 +68,8 @@ body.dark {
 
     --darkmode-bg: var(--white);
     --darkmode-color: var(--black);
+
+    --cover-bg: var(--gray-hover-darker);
 }
 
 @mixin MnullPnull {

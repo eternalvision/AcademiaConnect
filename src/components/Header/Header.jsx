@@ -15,21 +15,29 @@ export const Header = ({
     const { Logo, Menu } = HeaderComponents;
     return (
         <header className="Header">
-            <Logo Assets={Assets} />
-            <Menu
-                Assets={Assets}
-                Languages={Languages}
-                useLanguage={useLanguage}
-                activeMenuId={activeMenuId}
-                setActiveMenuId={setActiveMenuId}
-                getIconNameWithTheme={getIconNameWithTheme}
-                useLocalStorageState={useLocalStorageState}
-                useDarkMode={useDarkMode}
-            />
-            <div>
-                <DarkMode Assets={Assets} useDarkMode={useDarkMode} />
-                <Localization />
-            </div>
+            <ul className="HeaderList">
+                <li>
+                    <Logo Assets={Assets} />
+                </li>
+                <li>
+                    <Menu
+                        Assets={Assets}
+                        Languages={Languages}
+                        useLanguage={useLanguage}
+                        activeMenuId={activeMenuId}
+                        setActiveMenuId={setActiveMenuId}
+                        getIconNameWithTheme={getIconNameWithTheme}
+                        useLocalStorageState={useLocalStorageState}
+                        useDarkMode={useDarkMode}
+                    />
+                </li>
+                <li>
+                    <div>
+                        <DarkMode Assets={Assets} useDarkMode={useDarkMode} />
+                        <Localization />
+                    </div>
+                </li>
+            </ul>
         </header>
     );
 };
