@@ -1,12 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import { Helpers } from "./helpers/Helpers";
-import { RoutesComponent } from "./routes/RoutesComponent";
 
 export const App = ({
     Header,
     Main,
-    Footer,
     Assets,
     DisableLinks,
     Languages,
@@ -14,6 +12,7 @@ export const App = ({
     Localization,
     DarkMode,
     useDarkMode,
+    RoutesComponent,
 }) => {
     const location = useLocation();
     const { selectedLang } = useLanguage();

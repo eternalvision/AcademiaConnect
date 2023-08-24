@@ -9,7 +9,7 @@ import { Assets } from "./assets/Assets";
 import { Components } from "./components/Components";
 import { App } from "./App";
 
-const { Main, Header, Footer, FunctionalComponents } = Components;
+const { Main, Header, FunctionalComponents } = Components;
 const {
     DisableLinks,
     Languages,
@@ -19,6 +19,7 @@ const {
     DarkMode,
     DarkModeProvider,
     useDarkMode,
+    RoutesComponent,
 } = FunctionalComponents;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -29,7 +30,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                     <App
                         Header={Header}
                         Main={Main}
-                        Footer={Footer}
                         Assets={Assets}
                         DisableLinks={DisableLinks}
                         Languages={Languages}
@@ -37,6 +37,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         Localization={Localization}
                         DarkMode={DarkMode}
                         useDarkMode={useDarkMode}
+                        RoutesComponent={RoutesComponent}
                     />
                 </LanguageProvider>
             </DarkModeProvider>

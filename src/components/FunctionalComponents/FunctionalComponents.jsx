@@ -8,6 +8,7 @@ import { Localization } from "./Localization/Localization.jsx";
 import { DarkMode } from "./DarkMode/DarkMode";
 import { DarkModeProvider } from "./DarkMode/DarkModeContext";
 import { useDarkMode } from "./DarkMode/DarkModeContext";
+import { RoutesComponent } from "./routes/RoutesComponent";
 
 export const FunctionalComponents = {
     DisableLinks,
@@ -18,4 +19,5 @@ export const FunctionalComponents = {
     DarkMode,
     DarkModeProvider,
     useDarkMode,
+    RoutesComponent,
 };
