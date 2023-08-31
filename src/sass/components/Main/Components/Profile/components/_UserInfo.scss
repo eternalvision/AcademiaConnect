@@ -1,6 +1,5 @@
-.MainUserInfo {
-    margin-top: -100px;
-    margin-left: 25px;
+.MoreInfo_button {
+    display: none;
 }
 
 .MainUserInfo-list {
@@ -17,18 +16,28 @@
 }
 
 .MainUserInfo-item__Photo {
-    border-radius: var(--border-r-bigger) 0px 0px var(--border-r-bigger);
+    border-radius: var(--border-r-s) 0px 0px var(--border-r-s);
     padding: 20px 0px 20px 20px;
 }
 
 .MainUserInfo-item__UserInfo {
-    border-radius: 0px var(--border-r-bigger) var(--border-r-bigger) 0px;
+    border-radius: 0px var(--border-r-s) var(--border-r-s) 0px;
 }
 
 .MainUserInfo-item__Photo,
 .MainUserInfo-item__UserInfo {
-    background-color: #a4a4a4d5;
+    background-color: var(--gray-card-profile);
     backdrop-filter: blur(20px);
+}
+
+.MainList-UserInfo__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.MainList-UserInfo__list-UserInfo {
+    display: flex;
+    flex-direction: column;
 }
 
 .UserInfo {
@@ -39,6 +48,10 @@
 .UserInfo-Name {
     font-size: 40px;
     display: flex;
+    p {
+        text-wrap: nowrap;
+        margin-right: 20px;
+    }
 }
 
 .UserInfo-UserName {

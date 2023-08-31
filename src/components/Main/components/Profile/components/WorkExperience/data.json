@@ -1,0 +1,29 @@
+[
+    {
+        "id": "0",
+        "dateFrom": "11.09.2013",
+        "dateTo": "4.05.2016",
+        "logoLink": "https://cdn-icons-png.flaticon.com/512/63/63672.png",
+        "companyName": "Windows",
+        "job": "Art-Director",
+        "jobTitle": "Responsible for product design"
+    },
+    {
+        "id": "1",
+        "dateFrom": "05.06.2013",
+        "dateTo": "05.06.2016",
+        "logoLink": "https://cdn.dribbble.com/users/954572/screenshots/20225943/media/4a8c0bf9dc44f38066221e6710701a78.gif",
+        "companyName": "SAMSUNG",
+        "job": "Full-Stack Web-Developer",
+        "jobTitle": "Project development"
+    },
+    {
+        "id": "2",
+        "dateFrom": "11.09.2016",
+        "dateTo": "now",
+        "logoLink": "https://www.cenasiemens.cz/wp-content/uploads/2022/10/Siemens-logo.svg",
+        "companyName": "SIEMENS",
+        "job": "Full-Stack Web-Developer",
+        "jobTitle": "Project development"
+    }
+]

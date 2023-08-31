@@ -1,4 +1,4 @@
-export const Cover = ({ Assets, Languages, Localization, useLanguage }) => {
+export const UserCover = ({ Assets, Languages, Localization, useLanguage }) => {
     const { Logo, Images } = Assets;
     return (
         <section className="MainCover">

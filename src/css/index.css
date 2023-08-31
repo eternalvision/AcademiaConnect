@@ -4,6 +4,7 @@
   --black: #010101;
   --gray-hover: #bdbdbd;
   --gray-hover-darker: #818181;
+  --gray-card-profile: #a4a4a4d5;
   --transparent: transparent;
   --border-r-bigger: 30px;
   --border-r-b: 20px;
@@ -254,9 +255,65 @@ body {
   border-radius: var(--border-r-b);
 }
 
-.MainUserInfo {
-  margin-top: -100px;
-  margin-left: 25px;
+.UserFriends-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 20px 20px 0px;
+  margin-top: 5px;
+  overflow-x: auto;
+}
+.UserFriends-list li {
+  margin: 0px 10px;
+}
+.UserFriends-list li a {
+  color: var(--menu-items-color);
+  border-radius: var(--border-r-circle);
+  height: 100%;
+  display: block;
+}
+.UserFriends-list li a section {
+  position: relative;
+}
+.UserFriends-list li a section img {
+  border-radius: var(--border-r-s);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.UserFriends-list li a section span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: var(--border-r-circle);
+}
+.UserFriends-list li:first-child {
+  margin-left: 0px;
+}
+.UserFriends-list li:last-child {
+  margin-right: 0px;
+}
+
+.online {
+  background-color: var(--online);
+}
+
+.offline {
+  background-color: var(--offline);
+}
+
+.Posts {
+  margin-left: 20px;
+  background-color: var(--gray-card-profile);
+  border-radius: var(--border-r-s);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  padding: 20px;
+}
+
+.MoreInfo_button {
+  display: none;
 }
 
 .MainUserInfo-list {
@@ -273,19 +330,38 @@ body {
 }
 
 .MainUserInfo-item__Photo {
-  border-radius: var(--border-r-bigger) 0px 0px var(--border-r-bigger);
+  border-radius: var(--border-r-s) 0px 0px var(--border-r-s);
   padding: 20px 0px 20px 20px;
 }
 
 .MainUserInfo-item__UserInfo {
-  border-radius: 0px var(--border-r-bigger) var(--border-r-bigger) 0px;
+  border-radius: 0px var(--border-r-s) var(--border-r-s) 0px;
 }
 
 .MainUserInfo-item__Photo,
 .MainUserInfo-item__UserInfo {
-  background-color: rgba(164, 164, 164, 0.8352941176);
+  background-color: var(--gray-card-profile);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+}
+
+.MainList-UserInfo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.MainList-UserInfo__list-UserInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .UserInfo {
@@ -298,6 +374,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+.UserInfo-Name p {
+  text-wrap: nowrap;
+  margin-right: 20px;
 }
 
 .UserInfo-UserName {
@@ -315,6 +395,64 @@ body {
   margin-left: 0px;
 }
 
+.WorkExperience {
+  background-color: var(--gray-card-profile);
+  border-radius: var(--border-r-s);
+  padding: 20px;
+}
+.WorkExperience p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.WorkExperience-list {
+  margin-top: 20px;
+}
+
+.WorkExperience-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.WorkExperience-list__item img {
+  margin-right: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.WorkExperience-list__item:last-child {
+  margin-bottom: 0px;
+}
+
+.WorkExperience-list__item-workInfo ul:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.WorkExperience-list__item-workInfo ul li {
+  display: block !important;
+}
+
+.CompanyName {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.Job {
+  font-size: 18px;
+}
+
 .Main {
   overflow-y: auto;
   -webkit-box-flex: 1;
@@ -322,6 +460,7 @@ body {
           flex: 1 1 auto;
   background-color: var(--main-bg);
   border-radius: var(--border-r-b);
+  position: relative;
 }
 .Main::-webkit-scrollbar {
   width: 12px;
@@ -350,6 +489,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.MainList-UserInfo {
+  padding-bottom: 35px;
+  margin: 0px 25px;
+  margin-top: -150px;
 }
 
 .Footer {

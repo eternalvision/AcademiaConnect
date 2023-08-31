@@ -1,0 +1,51 @@
+.WorkExperience {
+    background-color: var(--gray-card-profile);
+    border-radius: var(--border-r-s);
+    padding: 20px;
+    p {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+.WorkExperience-list {
+    margin-top: 20px;
+}
+
+.WorkExperience-list__item {
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    margin-bottom: 20px;
+    img {
+        margin-right: 20px;
+        object-fit: contain;
+    }
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+.WorkExperience-list__item-workInfo {
+    ul {
+        &:first-child {
+            display: flex;
+            flex-direction: column;
+        }
+        li {
+            display: block !important;
+        }
+    }
+}
+
+.CompanyName {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Job {
+    font-size: 18px;
+}
+
+.WorkDates {
+}

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": null,
+        "postTitle": "Distinctio rem quis!",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorum dolore quam repellat excepturi dolor, fuga autem unde tempore mollitia doloremque laborum, explicabo quas distinctio rem quis! Quisquam, autem provident possimus corporis dolor explicabo architecto officia, harum non ipsum quam!",
+        "likes": 0,
+        "username": "deavision"
+    },
+    {
+        "id": 2,
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/1200px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+        "postTitle": "Consectetur adipisicing elit",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorum dolore quam repellat excepturi dolor, fuga autem unde tempore mollitia doloremque laborum, explicabo quas distinctio rem quis! Quisquam, autem provident possimus corporis dolor explicabo architecto officia, harum non ipsum quam!",
+        "likes": 254,
+        "username": "deavision"
+    },
+    {
+        "id": 3,
+        "image": "https://ih1.redbubble.net/image.4931763839.7959/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
+        "postTitle": "Ipsum dolor sit amet",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolorum dolore quam repellat excepturi dolor, fuga autem unde tempore mollitia doloremque laborum, explicabo quas distinctio rem quis! Quisquam, autem provident possimus corporis dolor explicabo architecto officia, harum non ipsum quam!",
+        "likes": 31,
+        "username": "deavision"
+    }
+]
