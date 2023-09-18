@@ -45,6 +45,8 @@ body.light {
     --darkmode-color: var(--white);
 
     --cover-bg: var(--gray-hover);
+
+    --loader-color: var(---black);
 }
 
 body.dark {
@@ -70,6 +72,8 @@ body.dark {
     --darkmode-color: var(--black);
 
     --cover-bg: var(--gray-hover-darker);
+
+    --loader-color: var(--white);
 }
 
 @mixin MnullPnull {

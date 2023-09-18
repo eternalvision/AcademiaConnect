@@ -1,7 +1,19 @@
 import { useState } from "react";
 import { ProfileComponents } from "./components/Components";
 
-export const Profile = ({ Assets, Languages, Localization, useLanguage }) => {
+export const Profile = ({
+    Assets,
+    Languages,
+    Localization,
+    useLanguage,
+    NetworkStatus,
+    getIconNameWithTheme,
+    DarkMode,
+    useDarkMode,
+    GetLogo,
+    Posts,
+}) => {
+    const [componentReady, setComponentReady] = useState(false);
     const { UserCover, UserFriends, UserInfo, UserPosts, WorkExperience } =
         ProfileComponents;
 
@@ -29,6 +41,7 @@ export const Profile = ({ Assets, Languages, Localization, useLanguage }) => {
                             Languages={Languages}
                             Localization={Localization}
                             useLanguage={useLanguage}
+                            NetworkStatus={NetworkStatus}
                         />
                         <WorkExperience
                             Assets={Assets}
@@ -43,6 +56,11 @@ export const Profile = ({ Assets, Languages, Localization, useLanguage }) => {
                             Languages={Languages}
                             Localization={Localization}
                             useLanguage={useLanguage}
+                            getIconNameWithTheme={getIconNameWithTheme}
+                            DarkMode={DarkMode}
+                            useDarkMode={useDarkMode}
+                            GetLogo={GetLogo}
+                            Posts={Posts}
                         />
                     </li>
                 </ul>

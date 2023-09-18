@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
 
 export const Logo = () => {
+    const [noneClass, setNoneClass] = useState("none");
     return (
         <section className="HeaderLogo">
-            <Link to="/feed">AcademiaConnect</Link>
+            <button>AcademiaConnect</button>
         </section>
     );
 };

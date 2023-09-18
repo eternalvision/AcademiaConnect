@@ -1,4 +1,19 @@
+import { MessengerComponents } from "./components/Components";
+const { MessagePanel, ChatList } = MessengerComponents;
+
+export { MessagePanel };
+
 export const Messenger = ({ Assets, Languages, Localization, useLanguage }) => {
-    const { Logo } = Assets;
-    return <section className="Messenger"></section>;
+    return (
+        <section className="Messenger">
+            <ul className="MessengerList">
+                <li>
+                    <MessagePanel />
+                </li>
+                <li>
+                    <ChatList />
+                </li>
+            </ul>
+        </section>
+    );
 };

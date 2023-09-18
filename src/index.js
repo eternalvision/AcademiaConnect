@@ -9,7 +9,7 @@ import { Assets } from "./assets/Assets";
 import { Components } from "./components/Components";
 import { App } from "./App";
 
-const { Main, Header, FunctionalComponents } = Components;
+const { Main, Header, FunctionalComponents, MessagePanel } = Components;
 const {
     DisableLinks,
     Languages,
@@ -20,6 +20,9 @@ const {
     DarkModeProvider,
     useDarkMode,
     RoutesComponent,
+    NetworkStatus,
+    GetLogo,
+    Posts,
 } = FunctionalComponents;
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -38,6 +41,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
                         DarkMode={DarkMode}
                         useDarkMode={useDarkMode}
                         RoutesComponent={RoutesComponent}
+                        MessagePanel={MessagePanel}
+                        NetworkStatus={NetworkStatus}
+                        GetLogo={GetLogo}
+                        Posts={Posts}
                     />
                 </LanguageProvider>
             </DarkModeProvider>

@@ -93,8 +93,17 @@ const ThemeSwitcherButtons = () => {
     ];
 };
 
+const PostElements = () => {
+    return [
+        { id: 1, img: "ThumbUp" },
+        { id: 2, img: "ThumbDown" },
+        { id: 3, img: "Bookmark" },
+    ];
+};
+
 export const Languages = {
     Menu,
     LocalizationButtons,
     ThemeSwitcherButtons,
+    PostElements,
 };

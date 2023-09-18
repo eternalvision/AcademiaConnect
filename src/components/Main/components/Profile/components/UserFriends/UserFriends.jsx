@@ -1,13 +1,8 @@
 import Friends from "./data.json";
 import { Link } from "react-router-dom";
+const shortId = require("short-uuid");
 
-export const UserFriends = ({
-    Assets,
-    Languages,
-    Localization,
-    useLanguage,
-}) => {
-    // const { Logo, Images } = UserFriends;
+export const UserFriends = ({ NetworkStatus }) => {
     return (
         <section className="UserFriends">
             <ul className="UserFriends-list">
@@ -21,24 +16,18 @@ export const UserFriends = ({
                         imageUrl,
                     }) => {
                         return (
-                            <li key={`${id}${username}`}>
+                            <li key={shortId.generate()}>
                                 <Link
                                     to={`/friends/${username}`}
                                     rel={`${name} ${surName}`}>
-                                    <section>
-                                        <img
-                                            src={imageUrl}
-                                            alt={`${name} ${surName}`}
-                                            width={70}
-                                            height={70}
-                                        />
-                                        <span
-                                            className={
-                                                statusNetwork
-                                                    ? "online"
-                                                    : "offline"
-                                            }></span>
-                                    </section>
+                                    <NetworkStatus
+                                        status={statusNetwork}
+                                        imageUrl={imageUrl}
+                                        name={name}
+                                        surName={surName}
+                                        imageWidth={70}
+                                        imageHeight={70}
+                                    />
                                 </Link>
                             </li>
                         );

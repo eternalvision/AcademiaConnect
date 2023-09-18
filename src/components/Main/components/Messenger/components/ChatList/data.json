@@ -1,0 +1,50 @@
+[
+    {
+        "id": "0",
+        "name": "Bred",
+        "surName": "Pit",
+        "username": "bredPit",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/48121/57939.jpg",
+        "statusNetwork": true
+    },
+    {
+        "id": "1",
+        "name": "Jennifer",
+        "surName": "Lawrence",
+        "username": "jenLawrence",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/124618/198483.jpg",
+        "statusNetwork": false
+    },
+    {
+        "id": "2",
+        "name": "Chris",
+        "surName": "Pratt",
+        "username": "ChPratt",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/83345/921680.jpg",
+        "statusNetwork": true
+    },
+    {
+        "id": "3",
+        "name": "Bred",
+        "surName": "Pit",
+        "username": "bredPit",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/48121/57939.jpg",
+        "statusNetwork": true
+    },
+    {
+        "id": "4",
+        "name": "Jennifer",
+        "surName": "Lawrence",
+        "username": "jenLawrence",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/124618/198483.jpg",
+        "statusNetwork": false
+    },
+    {
+        "id": "5",
+        "name": "Chris",
+        "surName": "Pratt",
+        "username": "ChPratt",
+        "imageUrl": "https://www.kino-teatr.ru/acter/album/83345/921680.jpg",
+        "statusNetwork": true
+    }
+]

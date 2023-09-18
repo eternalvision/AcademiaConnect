@@ -13,6 +13,10 @@ export const App = ({
     DarkMode,
     useDarkMode,
     RoutesComponent,
+    MessagePanel,
+    NetworkStatus,
+    GetLogo,
+    Posts,
 }) => {
     const location = useLocation();
     const { selectedLang } = useLanguage();
@@ -39,6 +43,7 @@ export const App = ({
                 useLocalStorageState={useLocalStorageState}
                 DarkMode={DarkMode}
                 useDarkMode={useDarkMode}
+                GetLogo={GetLogo}
             />
             <div className="RootContainers">
                 <Main
@@ -46,7 +51,15 @@ export const App = ({
                     Languages={Languages}
                     Localization={Localization}
                     useLanguage={useLanguage}
+                    getIconNameWithTheme={getIconNameWithTheme}
+                    useLocalStorageState={useLocalStorageState}
                     RoutesComponent={RoutesComponent}
+                    MessagePanel={MessagePanel}
+                    NetworkStatus={NetworkStatus}
+                    DarkMode={DarkMode}
+                    useDarkMode={useDarkMode}
+                    GetLogo={GetLogo}
+                    Posts={Posts}
                 />
             </div>
         </>

@@ -37,6 +37,7 @@ body.light {
   --darkmode-bg: var(--black);
   --darkmode-color: var(--white);
   --cover-bg: var(--gray-hover);
+  --loader-color: var(---black);
 }
 
 body.dark {
@@ -57,6 +58,7 @@ body.dark {
   --darkmode-bg: var(--white);
   --darkmode-color: var(--black);
   --cover-bg: var(--gray-hover-darker);
+  --loader-color: var(--white);
 }
 
 * {
@@ -158,6 +160,47 @@ body {
   background-color: var(--lang-inactive-bg);
 }
 
+.DarkMode {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 10px;
+}
+.DarkMode button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  border-radius: var(--border-r-circle);
+  cursor: pointer;
+  padding: 10px;
+  background-color: var(--darkmode-bg);
+  color: var(--darkmode-color);
+}
+.DarkMode button svg {
+  width: 25px;
+  height: 25px;
+}
+
+.Footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  background-color: var(--footer-bg);
+  border-radius: var(--border-r-b);
+  margin: var(--block-spacing) var(--distance-boundaries) var(--distance-boundaries) var(--block-spacing);
+}
+
 .HeaderLogo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -165,17 +208,20 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-style: italic;
-  font-size: 20px;
   background-color: var(--logo-bg);
   color: var(--logo-color);
   border-radius: var(--border-r-b) var(--border-r-s);
 }
-.HeaderLogo a {
+.HeaderLogo button {
+  background-color: inherit;
   color: inherit;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: var(--border-r-b) var(--border-r-s);
   padding: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
 }
 
 .HeaderMenu-list li {
@@ -247,6 +293,47 @@ body {
           justify-content: space-between;
 }
 
+.Tailspin {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  place-items: center;
+  overflow: auto;
+}
+
+.Localization {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: var(--font-size-b);
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+      -ms-user-select: none !important;
+          user-select: none !important;
+}
+.Localization button {
+  padding: 10px;
+  width: 100%;
+}
+.Localization button:first-child {
+  border-radius: var(--border-r-s) 0px 0px var(--border-r-s);
+}
+.Localization button:last-child {
+  border-radius: 0px var(--border-r-s) var(--border-r-s) 0px;
+}
+
 .MainCover img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -272,35 +359,11 @@ body {
   height: 100%;
   display: block;
 }
-.UserFriends-list li a section {
-  position: relative;
-}
-.UserFriends-list li a section img {
-  border-radius: var(--border-r-s);
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.UserFriends-list li a section span {
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  width: 20px;
-  height: 20px;
-  border-radius: var(--border-r-circle);
-}
 .UserFriends-list li:first-child {
   margin-left: 0px;
 }
 .UserFriends-list li:last-child {
   margin-right: 0px;
-}
-
-.online {
-  background-color: var(--online);
-}
-
-.offline {
-  background-color: var(--offline);
 }
 
 .Posts {
@@ -497,66 +560,28 @@ body {
   margin-top: -150px;
 }
 
-.Footer {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 auto;
-          flex: 0 1 auto;
-  background-color: var(--footer-bg);
-  border-radius: var(--border-r-b);
-  margin: var(--block-spacing) var(--distance-boundaries) var(--distance-boundaries) var(--block-spacing);
-}
-
-.Localization {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: var(--font-size-b);
-  -webkit-user-select: none !important;
-     -moz-user-select: none !important;
-      -ms-user-select: none !important;
-          user-select: none !important;
-}
-.Localization button {
-  padding: 10px;
-  width: 100%;
-}
-.Localization button:first-child {
-  border-radius: var(--border-r-s) 0px 0px var(--border-r-s);
-}
-.Localization button:last-child {
-  border-radius: 0px var(--border-r-s) var(--border-r-s) 0px;
-}
-
-.DarkMode {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 10px;
-}
-.DarkMode button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+.NetworkStatus {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 20px;
+  height: 20px;
   border-radius: var(--border-r-circle);
-  cursor: pointer;
-  padding: 10px;
-  background-color: var(--darkmode-bg);
-  color: var(--darkmode-color);
 }
-.DarkMode button svg {
-  width: 25px;
-  height: 25px;
+
+.online {
+  background-color: var(--online);
+}
+
+.offline {
+  background-color: var(--offline);
+}
+
+.NetworkStatus-container {
+  position: relative;
+}
+.NetworkStatus-container img {
+  border-radius: var(--border-r-s);
+  -o-object-fit: cover;
+     object-fit: cover;
 }

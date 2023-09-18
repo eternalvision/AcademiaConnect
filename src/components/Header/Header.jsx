@@ -11,6 +11,7 @@ export const Header = ({
     useLocalStorageState,
     DarkMode,
     useDarkMode,
+    GetLogo,
 }) => {
     const { Logo, Menu } = HeaderComponents;
     return (
@@ -29,6 +30,7 @@ export const Header = ({
                         getIconNameWithTheme={getIconNameWithTheme}
                         useLocalStorageState={useLocalStorageState}
                         useDarkMode={useDarkMode}
+                        GetLogo={GetLogo}
                     />
                 </li>
                 <li>
